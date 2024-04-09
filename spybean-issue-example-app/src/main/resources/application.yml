@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ExampleApp
+  data:
+    mongodb:
+      uri: mongodb://${mongodb_username}:${mongodb_password}@${mongodb.urls}/${mongodb.dbname}?ssl=true&replicaSet=${mongodb.replicaSet}
+
+server:
+  port: 8080
